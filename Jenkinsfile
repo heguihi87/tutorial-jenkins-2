@@ -22,6 +22,7 @@ node {
     // ------------------------------------
    // -- ETAPA: Sonarqube
    // ------------------------------------
+   // ------------------------------------
    stage 'Sonarqube'
    echo '*executing ... Sonarqube*'
    sh 'mvn clean install sonar:sonar -P qa-ui -Dmaven.test.skip=true -f ./pom.xml'
